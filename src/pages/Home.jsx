@@ -11,6 +11,7 @@ import { FiRefreshCcw } from 'react-icons/fi';
 import { GoogleGenAI } from "@google/genai";
 import { ClipLoader } from 'react-spinners';
 import { toast } from 'react-toastify';
+import { ReactTyped } from "react-typed"
 
 const Home = () => {
 
@@ -113,7 +114,7 @@ Requirements:
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-6 lg:px-16">
         {/* Left Section */}
         <div className="w-full py-6 rounded-xl bg-[#141319] mt-5 p-5">
-          <h3 className='text-[25px] font-semibold sp-text'>AI Component Generator</h3>
+          <ReactTyped  typeSpeed={50} backSpeed={30}  loop  className='text-[25px] font-semibold sp-text' strings={["AI Component Generator"]}  />
           <p className='text-gray-400 mt-2 text-[16px]'>Describe your component and let AI code it for you.</p>
 
           <p className='text-[15px] font-[700] mt-4'>Framework</p>
